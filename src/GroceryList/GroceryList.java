@@ -19,13 +19,14 @@ groceryList.forEach(System.out::println );  //isma number kase add kara list ma.
 }
 
     public void searchItemInList(String searchItem) {
-    int position = findGroceryItem(searchItem);
-        if(position >=0){
-            String item = groceryList.get(position);
-            System.out.println("found"+item+"in our grocery list");
-        }else {
-            System.out.println("Item"+searchItem+"is not in our grocery list");
-        }
+//    int position = findGroceryItem(searchItem);
+//        if(position >=0){
+//            String item = groceryList.get(position);
+//            System.out.println("found"+item+"in our grocery list");
+//        }else {
+//            System.out.println("Item"+searchItem+"is not in our grocery list");
+//        }
+        groceryList.stream().filter(item -> item.equals(searchItem)).forEach(System.out::println);
 
     }
 
