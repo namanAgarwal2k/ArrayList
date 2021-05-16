@@ -29,6 +29,7 @@ groceryList.forEach(System.out::println );  //isma number kase add kara list ma.
 
     }
 
+
     private int findGroceryItem(String searchItem) {
     return groceryList.indexOf(searchItem.toLowerCase());
     }
